@@ -20,6 +20,36 @@ npx create-remix@latest --template coder7475/bare-metal-remix
 
 Not a fan of bits of the stack? Fork it, change it, and use `npx create-remix --template your/repo`! Make it your own.
 
+## Routes Folder Structure
+
+Convention Remix One Layer Folder Structure
+
+```bash
+app/
+├── routes/
+│   ├── _index/
+│   │   ├── signup-form.tsx
+│   │   └── route.tsx
+│   ├── about/
+│   │   ├── header.tsx
+│   │   └── route.tsx
+│   ├── concerts/
+│   │   ├── favorites-cookie.ts
+│   │   └── route.tsx
+│   ├── concerts.$city/
+│   │   └── route.tsx
+│   ├── concerts._index/
+│   │   ├── featured.tsx
+│   │   └── route.tsx
+│   └── concerts.trending/
+│       ├── card.tsx
+│       ├── route.tsx
+│       └── sponsored.tsx
+└── root.tsx
+```
+
+**Note**: Only the folders directly beneath `app/routes` will be registered as a route. Deeply nested folders are ignored. The file at `app/routes/about/header/route.tsx` will not create a route.
+
 ## Development
 
 Start the Journey:
