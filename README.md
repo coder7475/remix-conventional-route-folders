@@ -50,6 +50,14 @@ app/
 
 **Note**: Only the folders directly beneath `app/routes` will be registered as a route. Deeply nested folders are ignored. The file at `app/routes/about/header/route.tsx` will not create a route.
 
+## Why Use this Route Structure
+
+For routes that require additional modules or assets, a folder inside of app/routes with a route.tsx file can be used. This method:
+
+1. `Co-locates Modules`: It gathers all elements connected to a particular route, ensuring logic, styles, and components are closely knit.
+2. `Simplifies Imports`: With related modules in one place, managing imports becomes straightforward, enhancing code maintainability.
+3. `Facilitates Automatic Code Organization`: Using the route.tsx setup inherently promotes a well-organized codebase, beneficial as the application scales.
+
 ## Development
 
 Start the Journey:
