@@ -1,6 +1,9 @@
+import Header from "./header";
+
 const About = () => {
   return (
-    <div className="border-2 border-red-500">
+    <div>
+      <Header />
       This is About page nested under root
     </div>
   );

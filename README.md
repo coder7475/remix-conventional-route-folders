@@ -26,25 +26,26 @@ Convention Remix One Layer Folder Structure
 
 ```bash
 app/
-├── routes/
-│   ├── _index/
-│   │   ├── signup-form.tsx
-│   │   └── route.tsx
-│   ├── about/
+├── routes
+│   ├── _index
+│   │   ├── route.tsx
+│   │   └── signup-form.tsx
+│   ├── about
 │   │   ├── header.tsx
 │   │   └── route.tsx
-│   ├── concerts/
-│   │   ├── favorites-cookie.ts
+│   ├── concerts
+│   │   ├── favourite-cookie.tsx
 │   │   └── route.tsx
-│   ├── concerts.$city/
+│   ├── concerts.$city
 │   │   └── route.tsx
-│   ├── concerts._index/
+│   ├── concerts._index
 │   │   ├── featured.tsx
 │   │   └── route.tsx
-│   └── concerts.trending/
-│       ├── card.tsx
-│       ├── route.tsx
-│       └── sponsored.tsx
+│   └── concerts.trending
+│       ├── Components
+│       │   ├── Card.tsx
+│       │   └── Sponsored.tsx
+│       └── route.tsx
 └── root.tsx
 ```
 
