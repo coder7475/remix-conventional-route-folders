@@ -51,6 +51,8 @@ app/
 
 **Note**: Only the folders directly beneath `app/routes` will be registered as a route. Deeply nested folders are ignored. The file at `app/routes/about/header/route.tsx` will not create a route.
 
+Ref: [Default Routes Convention] (https://remix.run/docs/ja/main/discussion/routes#conventional-route-folders)
+
 ## Why Use this Route Structure
 
 For routes that require additional modules or assets, a folder inside of app/routes with a route.tsx file can be used. This method:
